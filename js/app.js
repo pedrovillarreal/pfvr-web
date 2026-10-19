@@ -136,6 +136,7 @@
     b.addEventListener("click", function () { gi = i; verFoto(); visor.showModal(); });
     gal.appendChild(b);
   });
+  if (FOTOS_G.length) gal.insertAdjacentHTML("beforeend", '<p class="galeria-pie">Ningbo, China. Toca una foto para ampliarla.</p>');
   var verFoto = function () { $("#visorImg").src = FOTOS_G[gi].archivo; $("#visorImg").alt = FOTOS_G[gi].pie; $("#visorPie").textContent = FOTOS_G[gi].pie; };
   var paso = function (d) { gi = (gi + d + FOTOS_G.length) % FOTOS_G.length; verFoto(); };
   $("#visorAnt").addEventListener("click", function () { paso(-1); });

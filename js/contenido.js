@@ -6,19 +6,19 @@
    - PUBLICACIONES: tarjetas de "Medios" que abren tu post en IG / FB.
    - NOTAS: notas informativas que se leen dentro de la página.
    - GALERIA_CHINA: fotos de la sección de distintivos.
-   - ACCESOS: herramientas y páginas propias (calculadora, etc.).
+   - ACCESOS: herramientas y páginas propias.
    Guarda, haz commit en GitHub y Vercel publica en ~30 segundos.
    ===================================================================== */
 
 window.PFVR = {
 
   REDES: {
-    // Sustituye [usuario] por tu usuario real; si dejas "" el ícono se oculta.
-    instagram: "https://www.instagram.com/[usuario]",
-    facebook:  "https://www.facebook.com/[usuario]",
+    // Si dejas "" en alguna red, su ícono se oculta.
+    instagram: "https://www.instagram.com/pedrovillarrealrodriguez",
+    facebook:  "https://www.facebook.com/share/1CDtNkCC51/",
     linkedin:  "https://www.linkedin.com/in/pedrofernandovillarrealrodriguez",
-    whatsapp:  "https://wa.me/528116305471",
-    correo:    "pedrovillarreal@outlook.com",
+    whatsapp:  "",
+    correo:    "pedrovillarrealrodriguez@outlook.com",
     telefono:  "+52 81 1630 7250"
   },
 
@@ -33,7 +33,7 @@ window.PFVR = {
       titulo: "Finiquito o liquidación: qué te corresponde al terminar la relación laboral",
       resumen: "Las diferencias entre renuncia, despido justificado e injustificado, y qué conceptos integran cada pago conforme a la Ley Federal del Trabajo.",
       imagen: "https://images.unsplash.com/photo-1644115019513-8ff6d81c29ea?w=900&q=70&auto=format&fit=crop",
-      url: "https://www.instagram.com/[usuario]"
+      url: "https://www.instagram.com/pedrovillarrealrodriguez"
     },
     {
       red: "facebook",
@@ -41,7 +41,7 @@ window.PFVR = {
       titulo: "Gobierno corporativo para empresas familiares en Nuevo León",
       resumen: "Actas, protocolos familiares y poderes: tres documentos que evitan conflictos entre socios y herederos.",
       imagen: "https://images.unsplash.com/photo-1642321215251-bd9999b0b408?w=900&q=70&auto=format&fit=crop",
-      url: "https://www.facebook.com/[usuario]"
+      url: "https://www.facebook.com/share/1CDtNkCC51/"
     },
     {
       red: "instagram",
@@ -49,7 +49,7 @@ window.PFVR = {
       titulo: "Cómo prepararte para tu primera audiencia oral",
       resumen: "Documentos, puntualidad y lo que conviene decir (y callar) frente al juzgador.",
       imagen: "https://images.unsplash.com/photo-1738031331362-17b064c9e0b2?w=900&q=70&auto=format&fit=crop",
-      url: "https://www.instagram.com/[usuario]"
+      url: "https://www.instagram.com/pedrovillarrealrodriguez"
     }
   ],
 
@@ -81,21 +81,16 @@ window.PFVR = {
   ],
 
   /* ---------- GALERÍA DE DISTINTIVOS / CHINA ----------
-     Coloca tus fotos en assets/img/china/ con estos nombres
-     (o cambia los nombres aquí). Si una foto falta, se muestra un marco. */
+     Para agregar una foto: súbela a assets/img/china/ y añade un renglón aquí. */
   GALERIA_CHINA: [
-    { archivo: "assets/img/china/china-01.jpg", pie: "[Evento o institución, ciudad, año]" },
-    { archivo: "assets/img/china/china-02.jpg", pie: "[Evento o institución, ciudad, año]" },
-    { archivo: "assets/img/china/china-03.jpg", pie: "[Evento o institución, ciudad, año]" },
-    { archivo: "assets/img/china/china-04.jpg", pie: "[Evento o institución, ciudad, año]" },
-    { archivo: "assets/img/china/china-05.jpg", pie: "[Evento o institución, ciudad, año]" }
+    { archivo: "assets/img/china/china-02.jpg", pie: "Conferencia sobre derecho comparado y resolución de controversias internacionales y su ejecución en México. Ningbo, China." },
+    { archivo: "assets/img/china/china-01.jpg", pie: "Tribunal Popular Intermedio de Ningbo, China." }
   ],
 
   /* ---------- ACCESOS DIRECTOS ----------
      estado: "activo" muestra la liga; "pronto" la marca como próxima.   */
   ACCESOS: [
-    { nombre: "Calculadora de finiquito", desc: "Finiquito y liquidación conforme a la LFT", url: "https://pedrovillarreal.github.io/calculadora-finiquito/", icono: "calc", estado: "activo" },
-    { nombre: "Agenda una consulta", desc: "Escríbeme por WhatsApp", url: "https://wa.me/528116305471", icono: "chat", estado: "activo" },
+    { nombre: "Agenda una consulta", desc: "Escríbeme por correo", url: "mailto:pedrovillarrealrodriguez@outlook.com?subject=Solicitud%20de%20consulta", icono: "mail", estado: "activo" },
     { nombre: "Calculadora de pensión alimenticia", desc: "Herramienta en desarrollo", url: "", icono: "calc", estado: "pronto" },
     { nombre: "Términos y plazos procesales", desc: "Herramienta en desarrollo", url: "", icono: "cal", estado: "pronto" }
   ]
