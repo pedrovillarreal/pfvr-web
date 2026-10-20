@@ -19,7 +19,7 @@ vercel.json             Configuración de Vercel
 
 | Archivo | Uso | Medida sugerida |
 |---|---|---|
-| `assets/img/pedro.jpg` | Tu fotografía en "Perfil" | 1200 × 1500 px, vertical |
+| `assets/img/pedro-perfil.jpg` | Tu fotografía en "Perfil" | 1200 × 1500 px, vertical |
 | `assets/img/logo-eva.png` | Logotipo de Escalante Villarreal & Asociados | PNG con fondo transparente, 1000 px |
 | `assets/img/china/china-01.jpg` … `china-05.jpg` | Galería de distintivos | 1600 px del lado largo |
 | `assets/img/medios/…` | Portadas de tus publicaciones (opcional) | 1200 × 900 px |
