@@ -14,7 +14,7 @@ window.PFVR = {
 
   /* Botones "Agenda una consulta": número de WhatsApp (con 52) y mensaje inicial */
   CONSULTA: {
-    whatsapp: "528116307250",
+    whatsapp: "528116087250",
     mensaje: "Hola, Lic. Villarreal. Me gustaría agendar una consulta."
   },
 
@@ -25,7 +25,7 @@ window.PFVR = {
     linkedin:  "https://www.linkedin.com/in/pedrofernandovillarrealrodriguez",
     whatsapp:  "",
     correo:    "pedrovillarrealrodriguez@outlook.com",
-    telefono:  "+52 81 1630 7250"
+    telefono:  "+52 81 1608 7250"
   },
 
   /* ---------- MEDIOS ----------
@@ -74,7 +74,7 @@ window.PFVR = {
   /* ---------- ACCESOS DIRECTOS ----------
      estado: "activo" muestra la liga; "pronto" la marca como próxima.   */
   ACCESOS: [
-    { nombre: "Agenda una consulta", desc: "Escríbeme por WhatsApp", url: "https://wa.me/528116307250?text=Hola%2C%20Lic.%20Villarreal.%20Me%20gustar%C3%ADa%20agendar%20una%20consulta.", icono: "whatsapp", estado: "activo" },
+    { nombre: "Agenda una consulta", desc: "Escríbeme por WhatsApp", url: "https://wa.me/528116087250?text=Hola%2C%20Lic.%20Villarreal.%20Me%20gustar%C3%ADa%20agendar%20una%20consulta.", icono: "whatsapp", estado: "activo" },
     { nombre: "Calculadora de pensión alimenticia", desc: "Herramienta en desarrollo", url: "", icono: "calc", estado: "pronto" },
     { nombre: "Términos y plazos procesales", desc: "Herramienta en desarrollo", url: "", icono: "cal", estado: "pronto" }
   ]
