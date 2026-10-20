@@ -142,6 +142,7 @@ p + p { margin-top: 14px; }
 .despacho-rejilla { position: relative; display: grid; grid-template-columns: 4fr 7fr; gap: clamp(36px, 6vw, 90px); align-items: center; }
 .despacho .titulo { color: #fff; max-width: 20ch; }
 .despacho .entrada { color: rgba(255,255,255,.88); }
+.despacho-vision { max-width: 62ch; color: rgba(255,255,255,.75); }
 .despacho-logo { background: #fff; aspect-ratio: 1; display: grid; place-items: center; padding: 14%; border-top: 5px solid var(--dorado); }
 .despacho-logo img { width: 100%; height: 100%; object-fit: contain; }
 .eva-marca { text-align: center; color: var(--grafito); }
