@@ -23,34 +23,12 @@ window.PFVR = {
   },
 
   /* ---------- MEDIOS ----------
-     red: "instagram" | "facebook" | "linkedin"
-     url: liga directa a la publicación (copia "Copiar enlace" en la app)
-     imagen: archivo en assets/img/medios/ o URL de imagen libre        */
+     Para agregar una publicación copia su liga ("Copiar enlace" en la app)
+     y pega un renglón nuevo AL INICIO de la lista. Las publicaciones de
+     Instagram se muestran tal cual, con la imagen y el texto originales.
+     red: "instagram" | "facebook" | "linkedin"                        */
   PUBLICACIONES: [
-    {
-      red: "instagram",
-      fecha: "2026-10-15",
-      titulo: "Finiquito o liquidación: qué te corresponde al terminar la relación laboral",
-      resumen: "Las diferencias entre renuncia, despido justificado e injustificado, y qué conceptos integran cada pago conforme a la Ley Federal del Trabajo.",
-      imagen: "https://images.unsplash.com/photo-1644115019513-8ff6d81c29ea?w=900&q=70&auto=format&fit=crop",
-      url: "https://www.instagram.com/pedrovillarrealrodriguez"
-    },
-    {
-      red: "facebook",
-      fecha: "2026-10-02",
-      titulo: "Gobierno corporativo para empresas familiares en Nuevo León",
-      resumen: "Actas, protocolos familiares y poderes: tres documentos que evitan conflictos entre socios y herederos.",
-      imagen: "https://images.unsplash.com/photo-1642321215251-bd9999b0b408?w=900&q=70&auto=format&fit=crop",
-      url: "https://www.facebook.com/share/1CDtNkCC51/"
-    },
-    {
-      red: "instagram",
-      fecha: "2026-09-20",
-      titulo: "Cómo prepararte para tu primera audiencia oral",
-      resumen: "Documentos, puntualidad y lo que conviene decir (y callar) frente al juzgador.",
-      imagen: "https://images.unsplash.com/photo-1738031331362-17b064c9e0b2?w=900&q=70&auto=format&fit=crop",
-      url: "https://www.instagram.com/pedrovillarrealrodriguez"
-    }
+    { red: "instagram", fecha: "2025-05-12", url: "https://www.instagram.com/p/DJjvCQegtId/" }
   ],
 
   /* ---------- NOTAS INFORMATIVAS ----------

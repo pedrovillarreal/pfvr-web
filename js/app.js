@@ -91,15 +91,25 @@
     if (configurada(R[r])) seguir.insertAdjacentHTML("beforeend", '<a href="' + esc(R[r]) + '" target="_blank" rel="noopener">' + icono(r) + "Seguir en " + NOMBRE_RED[r] + "</a>");
   });
 
-  /* 6 · Medios */
-  var pubs = $("#publicaciones");
-  (D.PUBLICACIONES || []).slice().sort(function (a, b) { return a.fecha < b.fecha ? 1 : -1; }).forEach(function (p) {
+  /* 6 · Medios: Instagram se incrusta con su sistema oficial; las demás redes, como tarjeta */
+  var pubs = $("#publicaciones"), hayInstagram = false;
+  var esPostIG = function (u) { return /instagram\.com\/(p|reel|tv)\/[\w-]+/.test(u || ""); };
+  (D.PUBLICACIONES || []).slice().sort(function (x, y) { return x.fecha < y.fecha ? 1 : -1; }).forEach(function (p) {
     var red = NOMBRE_RED[p.red] || "Ver";
+    if (p.red === "instagram" && esPostIG(p.url)) {
+      hayInstagram = true;
+      var limpio = p.url.split("?")[0].replace("://instagram.com", "://www.instagram.com");
+      pubs.insertAdjacentHTML("beforeend",
+        '<div class="pub-ig"><blockquote class="instagram-media" data-instgrm-permalink="' + esc(limpio) + '" data-instgrm-version="14">' +
+        '<a href="' + esc(limpio) + '" target="_blank" rel="noopener">' + icono("instagram") + "Ver esta publicación en Instagram<br><small>" + fecha(p.fecha) + "</small></a></blockquote></div>");
+      return;
+    }
     pubs.insertAdjacentHTML("beforeend",
       '<a class="pub" href="' + esc(p.url) + '" target="_blank" rel="noopener">' +
-        '<div class="pub-img"><img src="' + esc(p.imagen) + '" alt="" loading="lazy"><span class="pub-red">' + icono(p.red) + red + "</span></div>" +
-        '<div class="pub-cuerpo"><time datetime="' + esc(p.fecha) + '">' + fecha(p.fecha) + "</time><h3>" + esc(p.titulo) + "</h3><p>" + esc(p.resumen) + '</p><span class="pub-ver">Ver en ' + red + "</span></div></a>");
+        (p.imagen ? '<div class="pub-img"><img src="' + esc(p.imagen) + '" alt="" loading="lazy"><span class="pub-red">' + icono(p.red) + red + "</span></div>" : "") +
+        '<div class="pub-cuerpo"><time datetime="' + esc(p.fecha) + '">' + fecha(p.fecha) + "</time><h3>" + esc(p.titulo || "Publicación en " + red) + "</h3><p>" + esc(p.resumen || "") + '</p><span class="pub-ver">Ver en ' + red + "</span></div></a>");
   });
+  if (hayInstagram) { var sc = document.createElement("script"); sc.async = true; sc.src = "https://www.instagram.com/embed.js"; document.body.appendChild(sc); }
 
   /* 7 · Notas */
   var lista = $("#listaNotas"), modal = $("#modalNota"), notaActual = null;
