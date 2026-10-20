@@ -115,7 +115,7 @@ p + p { margin-top: 14px; }
 /* 2 · Perfil */
 .perfil-rejilla { display: grid; grid-template-columns: minmax(260px, 5fr) 7fr; gap: clamp(36px, 6vw, 88px); align-items: start; }
 .perfil-foto { position: sticky; top: calc(var(--nav-h) + 24px); }
-.perfil-foto img, .perfil-foto .monograma { width: 100%; aspect-ratio: 2 / 3; object-fit: cover; background: var(--piedra); border-bottom: 5px solid var(--rojo); }
+.perfil-foto img, .perfil-foto .monograma { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; background: var(--piedra); border-bottom: 5px solid var(--rojo); }
 .monograma { display: grid; place-items: center; font-weight: 900; font-size: clamp(64px, 9vw, 120px); letter-spacing: -0.05em; color: var(--rojo); background: linear-gradient(160deg, var(--piedra), #DDE1E5) !important; }
 .perfil-foto figcaption { margin-top: 16px; font-weight: 700; font-size: 15px; color: var(--grafito); line-height: 1.4; }
 .perfil-foto figcaption span { font-weight: 500; color: var(--acero); }
