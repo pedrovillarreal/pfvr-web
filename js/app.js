@@ -168,5 +168,12 @@
       : '<li><div class="acceso pronto">' + interior + "</div></li>");
   });
 
+  /* Botones de consulta por WhatsApp (número y mensaje en contenido.js) */
+  var C = D.CONSULTA || {};
+  if (C.whatsapp) {
+    var wa = "https://wa.me/" + String(C.whatsapp).replace(/\D/g, "") + (C.mensaje ? "?text=" + encodeURIComponent(C.mensaje) : "");
+    document.querySelectorAll("[data-consulta]").forEach(function (a) { a.href = wa; });
+  }
+
   $("#anio").textContent = new Date().getFullYear();
 })();

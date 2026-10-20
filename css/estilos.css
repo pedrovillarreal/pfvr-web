@@ -53,6 +53,7 @@ p + p { margin-top: 14px; }
 /* Botones */
 .btn { display: inline-flex; align-items: center; gap: 10px; font: 600 15px/1 var(--f); padding: 16px 26px; border-radius: 2px; text-decoration: none; border: 2px solid transparent; cursor: pointer; transition: background .2s, color .2s, border-color .2s; }
 .btn svg { width: 18px; height: 18px; }
+.btn-wa svg { width: 20px; height: 20px; }
 .btn-rojo { background: var(--rojo); color: #fff; }
 .btn-rojo:hover { background: var(--rojo-hondo); }
 .btn-claro { border-color: rgba(255,255,255,.7); color: #fff; }
@@ -210,13 +211,15 @@ p + p { margin-top: 14px; }
 
 /* 8 · Contacto */
 .contacto-rejilla { display: grid; grid-template-columns: 6fr 5fr; gap: clamp(36px, 6vw, 90px); }
-.correo-grande { display: inline-block; font-size: clamp(20px, 2.5vw, 32px); font-weight: 800; letter-spacing: -0.02em; color: var(--rojo); text-decoration: none; border-bottom: 3px solid var(--dorado); padding-bottom: 4px; margin-bottom: 34px; overflow-wrap: anywhere; }
+.correo-grande { display: inline-block; font-size: clamp(17px, 1.85vw, 26px); font-weight: 800; letter-spacing: -0.02em; color: var(--rojo); text-decoration: none; border-bottom: 3px solid var(--dorado); padding-bottom: 4px; margin-bottom: 34px; overflow-wrap: anywhere; }
 .correo-grande:hover { color: var(--rojo-hondo); }
 .datos li { display: flex; gap: 14px; align-items: flex-start; padding: 12px 0; font-size: 16.5px; }
 .datos svg { width: 22px; height: 22px; color: var(--rojo); margin-top: 2px; }
 .datos a { text-decoration: none; }
 .datos a:hover { text-decoration: underline; text-decoration-color: var(--dorado); text-underline-offset: 4px; }
 .contacto .subtitulo { margin-top: 0; }
+.contacto-cta { margin-top: 30px; }
+.contacto-cta p { margin-top: 12px; font-size: 14.5px; color: var(--acero); }
 .accesos { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
 .acceso { display: flex; flex-direction: column; gap: 10px; padding: 20px; border: 1px solid var(--linea); text-decoration: none; color: var(--grafito); height: 100%; transition: border-color .2s, background .2s; }
 a.acceso:hover { border-color: var(--rojo); background: #FCF6F6; }
