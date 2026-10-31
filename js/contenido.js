@@ -75,6 +75,7 @@ window.PFVR = {
      estado: "activo" muestra la liga; "pronto" la marca como próxima.   */
   ACCESOS: [
     { nombre: "Agenda una consulta", desc: "Escríbeme por WhatsApp", url: "https://wa.me/528116087250?text=Hola%2C%20Lic.%20Villarreal.%20Me%20gustar%C3%ADa%20agendar%20una%20consulta.", icono: "whatsapp", estado: "activo" },
+    { nombre: "Calculadora de finiquito", desc: "Estimación conforme a la LFT", url: "/finiquito", icono: "calc", estado: "activo" },
     { nombre: "Calculadora de pensión alimenticia", desc: "Herramienta en desarrollo", url: "", icono: "calc", estado: "pronto" },
     { nombre: "Términos y plazos procesales", desc: "Herramienta en desarrollo", url: "", icono: "cal", estado: "pronto" }
   ]
